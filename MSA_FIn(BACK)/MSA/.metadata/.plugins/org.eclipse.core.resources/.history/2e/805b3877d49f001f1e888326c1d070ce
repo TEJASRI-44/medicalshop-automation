@@ -1,0 +1,8 @@
+package com.bharath.msa.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class VendorRecievedOrderController {
+
+}

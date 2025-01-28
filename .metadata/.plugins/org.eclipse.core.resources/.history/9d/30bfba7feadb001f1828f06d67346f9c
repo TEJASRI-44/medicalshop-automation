@@ -1,0 +1,13 @@
+package com.minutes_exercise_1;
+
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Primary
+public class MongoDbDataservice implements DataService{
+	public double[] retrieveData() {
+		return new double[] {11,22,33,44,55};
+				
+	}
+}

@@ -1,0 +1,5 @@
+package com.bharath.msa;
+
+public class MailConfig {
+
+}

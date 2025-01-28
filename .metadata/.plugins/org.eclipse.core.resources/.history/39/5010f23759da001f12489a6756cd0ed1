@@ -1,0 +1,15 @@
+package com._minutes.learn_spring_framework;
+
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+
+public class mario implements Gamingconsole{
+		public void up() {
+			System.out.println("up");
+		}
+		public void down() {
+			System.out.println("down");
+		}
+}

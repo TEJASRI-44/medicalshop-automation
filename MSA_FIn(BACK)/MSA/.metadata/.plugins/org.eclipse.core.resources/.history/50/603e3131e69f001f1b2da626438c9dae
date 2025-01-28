@@ -1,0 +1,9 @@
+package com.bharath.msa.service;
+
+public class ResourceNotFoundException {
+
+	
+	 public ResourceNotFoundException(String message) {
+	        super(message);
+	    }
+}

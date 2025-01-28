@@ -1,0 +1,14 @@
+package com.minutes_exercise_1;
+
+import java.util.Arrays;
+
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class BusinessCalculationservice {
+	private DataService dataservice;
+	public int findmax() {
+		return Arrays.stream(dataservice.retrieveData()).max().orElse(0);
+	}
+}

@@ -1,0 +1,14 @@
+package com.minutes_exercise_1;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan("com.minutes_exercise_1")
+public class config {
+	try(var context=new AnnotationConfigApplicationContext(config.class)){
+		context.getBean(BusinessCalculationservice.class);
+	}
+	
+}

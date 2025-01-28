@@ -1,0 +1,23 @@
+package com.bharath.msa.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.bharath.msa.entity.VendorReceivedOrder;
+import com.bharath.msa.repository.VendorReceivedOrderRepository;
+
+@Service
+public class VendorRecievedOrderServiceImpl {
+	
+	 @Autowired
+	    private VendorReceivedOrderRepository vendorReceivedOrderRepository;
+
+	    
+	    public VendorReceivedOrder storeOrder(VendorReceivedOrder order) {
+	        // Setting the date and status to null before saving
+	        order.setOrderDate(null);
+	        order.setStatus(null);
+	        return vendorReceivedOrderRepository.save(order);
+	    }
+
+}

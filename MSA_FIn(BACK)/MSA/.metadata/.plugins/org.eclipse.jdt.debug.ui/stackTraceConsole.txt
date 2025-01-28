@@ -1,0 +1,15 @@
+public class Sales {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @ManyToOne
+    @JoinColumn(name = "medicine_id")
+    private Medicine medicine;
+
+    private int quantitySold;
+    private Date saleDate;
+    private Double totalAmount;
+
+    // Getters and Setters
+}

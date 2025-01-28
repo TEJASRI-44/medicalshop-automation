@@ -1,0 +1,13 @@
+package com._minutes.learn_spring_framework;
+
+public class gamerunner {
+	private Gamingconsole game;
+	
+	public gamerunner(Gamingconsole game) {
+		this.game=game;
+	}
+	public void run() {
+		game.up();
+		game.down();
+	}
+}

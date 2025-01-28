@@ -1,0 +1,20 @@
+package com.bharath.msa.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class VendorRecievedOrderServiceImpl {
+	
+	 @Autowired
+	    private VendorReceivedOrderRepository vendorReceivedOrderRepository;
+
+	    // Method to store a new VendorReceivedOrder
+	    @Override
+	    public VendorReceivedOrder storeOrder(VendorReceivedOrder order) {
+	        // Setting the date and status to null before saving
+	        order.setOrderDate(null);
+	        order.setStatus(null);
+	        return vendorReceivedOrderRepository.save(order);
+	    }
+
+}

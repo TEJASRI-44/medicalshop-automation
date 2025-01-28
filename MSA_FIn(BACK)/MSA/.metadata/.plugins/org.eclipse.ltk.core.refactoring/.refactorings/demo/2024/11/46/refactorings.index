@@ -1,0 +1,6 @@
+1731292312861	Rename type 'VendorRecievedOrder'
+1731296428657	Rename type 'VendorOrderRecievedServiceImpl'
+1731296710465	Rename type 'VendorRecievedOrderRepository'
+1731296767838	Rename type 'VendorRecievedOrderController'
+1731296990492	Rename type 'VendorRecievedOrderServiceImpl'
+1731305993259	Delete element

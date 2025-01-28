@@ -1,0 +1,10 @@
+package com._minutes.learn_spring_framework;
+
+public class pacman implements Gamingconsole{
+		public void up() {
+			System.out.println("up");
+		}
+		public void down() {
+			System.out.println("down");
+		}
+}

@@ -1,0 +1,10 @@
+package com.minutes_exercise_1;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Mysqldataservice implements DataService{
+		public double[] retrieveData() {
+			return new double[] {1,2,3,4,5};
+		}
+}

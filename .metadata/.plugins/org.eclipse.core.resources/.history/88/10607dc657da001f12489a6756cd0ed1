@@ -1,0 +1,23 @@
+package com._minutes.learn_spring_framework;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan("com._minutes.learn_spring_framework")
+class LearnSpringFrameworkApplicationTests {
+
+    @Test
+    void testGamingConsole() {
+        // Create a context with the configuration class
+        try (AnnotationConfigApplicationContext context = 
+                     new AnnotationConfigApplicationContext(LearnSpringFrameworkApplicationTests.class)) {
+
+            // Get the GamingConsole bean and call its 'up' method
+            Gamingconsole gamingConsole = context.getBean(Gamingconsole.class);
+            gamingConsole.up();
+        }
+    }
+}

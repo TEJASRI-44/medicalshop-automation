@@ -1,0 +1,8 @@
+package com.bharath.msa.repository;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class PaymentRepository extends  {
+
+}

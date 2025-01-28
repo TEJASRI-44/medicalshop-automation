@@ -1,0 +1,14 @@
+package com.bharath.msa.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class VendorRecievedOrderController {
+
+	
+	 @PostMapping("/vendor-order")
+	    public ResponseEntity<VendorReceivedOrder> storeOrder(@RequestBody VendorReceivedOrder order) {
+	        VendorReceivedOrder savedOrder = vendorReceivedOrderService.storeOrder(order);
+	        return ResponseEntity.ok(savedOrder);
+	    }
+}
